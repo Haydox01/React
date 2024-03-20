@@ -6,13 +6,19 @@ import Welcome from './Components/Welcome';
 import Hello from './Components/Hello';
 import Message from './Components/Message';
 import Counter from './Components/Counter';
+import FunctionClick from './Components/FunctionClick';
+import ClassClick from './Components/ClassClick';
+import EventBind from './Components/EventBind';
 
 class App extends Component {
   render(){
    return(
     <div className="App">
-      <Counter />
-      {/* <Message /> */}
+      <EventBind />
+      {/* <Counter /> */}
+      {/* <FunctionClick />
+      <ClassClick /> */}
+      {/* { <Message /> }
       <Greet name = "Bruce" heroName= "Batman" >
         <p>This is children props</p>
       </Greet>
@@ -26,7 +32,7 @@ class App extends Component {
       <Welcome name = "Bruce" heroName= "Batman" />
       <Welcome name = "Clark" heroName= "Spiderman" />
 
-      <Hello />
+      <Hello /> */}
     </div>
     );
   }
