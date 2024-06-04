@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
+import Menu from "./Menu";
 
-function Pizza() {
+function Pizza(props) {
+  // console.log(props);
   return (
-    <div>
-        <img src='pizzas/spinaci.jpg' alt='Pizza spinaci' />
-        <h2>Pizza Spinaci</h2>
-        <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-    </div>
-  )
+    <li className="pizza">
+      <img src={props.pizzaObj.photoName} />
+      <h3>{props.pizzaObj.name}</h3>
+      <p>{props.pizzaObj.ingredient}</p>
+      <span>{props.pizzaObj.price}</span>
+    </li>
+  );
 }
 
-export default Pizza
+export default Pizza;
+// { name, ingredient, photoName, price }

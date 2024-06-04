@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-class Message extends Component {
-    render(){
-        return (
-            <h1>
-                Welcome Visitor
-            </h1>
-        )
-    }
-    }
-    export default Message;
-=======
 import React, {Component} from "react";
 
 class Message extends Component{
@@ -37,4 +25,3 @@ class Message extends Component{
 }
 
 export default Message;
->>>>>>> 6d1b871bd0f7a82a6106bdc3857582cc2da4db2e
