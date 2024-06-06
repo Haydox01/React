@@ -3,13 +3,13 @@ import Menu from "./Menu";
 
 function Pizza({ pizzaObj }) {
   // console.log(props);
-  if (pizzaObj.soldOut) return null; // rendering wit multiple returns
+  // if (pizzaObj.soldOut) return null; // rendering wit multiple returns
   return (
-    <li className="pizza">
+    <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
       <img src={pizzaObj.photoName} />
       <h3>{pizzaObj.name}</h3>
       <p>{pizzaObj.ingredient}</p>
-      <span>{pizzaObj.price}</span>
+      <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
     </li>
   );
 }
