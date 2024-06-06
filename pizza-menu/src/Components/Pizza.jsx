@@ -1,14 +1,15 @@
 import React from "react";
 import Menu from "./Menu";
 
-function Pizza(props) {
+function Pizza({ pizzaObj }) {
   // console.log(props);
+  if (pizzaObj.soldOut) return null; // rendering wit multiple returns
   return (
     <li className="pizza">
-      <img src={props.pizzaObj.photoName} />
-      <h3>{props.pizzaObj.name}</h3>
-      <p>{props.pizzaObj.ingredient}</p>
-      <span>{props.pizzaObj.price}</span>
+      <img src={pizzaObj.photoName} />
+      <h3>{pizzaObj.name}</h3>
+      <p>{pizzaObj.ingredient}</p>
+      <span>{pizzaObj.price}</span>
     </li>
   );
 }
