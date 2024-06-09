@@ -3,24 +3,30 @@ import Pizza from "./Pizza";
 import pizzaData from "../data";
 
 function Menu() {
-   const pizzas = [];
-  // const pizzas = pizzaData;
+  //const pizzas = [];
+  const pizzas = pizzaData;
   const numPizzas = pizzas.length;
 
   console.log(pizzas);
   return (
     <main className="menu">
       <h2>Our Menu</h2>
-      <p>Authentic Italian Cuisine. 6 creative dishes to choose from</p>
+
       {
         // numPizzas > 0 && ( // Conditional rendering with &&
-        numPizzas > 0 ? ( // conditional rendering with ternaries
-          <ul className="pizzas">
-            {pizzaData.map((pizza) => (
-              <Pizza pizzaObj={pizza} key={pizza.name} />
-            ))}
-          </ul>
-        ) : (<p>We are still working on our menu. please come back later</p>)
+        numPizzas > 0 ? (
+          <>
+            <p>Authentic Italian Cuisine. 6 creative dishes to choose from.</p>{" "}
+            // conditional rendering with ternaries
+            <ul className="pizzas">
+              {pizzaData.map((pizza) => (
+                <Pizza pizzaObj={pizza} key={pizza.name} />
+              ))}
+            </ul>
+          </>
+        ) : (
+          <p>We are still working on our menu. please come back later</p>
+        )
       }
 
       {/* <ul className="pizzas">
