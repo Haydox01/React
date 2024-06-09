@@ -6,10 +6,9 @@ function Pizza({ pizzaObj }) {
   // if (pizzaObj.soldOut) return null; // rendering wit multiple returns
   return (
     <li className={`pizza ${pizzaObj.soldOut ? "sold-out" : ""}`}>
-      <img src={pizzaObj.photoName} />
+      <img src={pizzaObj.photoName} alt={pizzaObj.name} />
       <h3>{pizzaObj.name}</h3>
-
-      <p>{pizzaObj.ingredient}</p>
+      <p>{pizzaObj.ingredients}</p>
       <span>{pizzaObj.soldOut ? "SOLD OUT" : pizzaObj.price}</span>
     </li>
   );
