@@ -4,6 +4,7 @@ import Pizza from './Components/Pizza';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Menu from './Components/Menu';
+import Counter from './Components/Counter';
 
 function App() {
  return(
@@ -11,6 +12,7 @@ function App() {
     <Header />
     <Menu />
  <Footer />
+ <Counter/>
  </div>
 );
 }
