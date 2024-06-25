@@ -8,10 +8,9 @@ import NavBar from "../components/NavBar";
 function HomePage() {
   return (
     <>
-    <NavBar />
       <Hero />
       <HomeCards />
-      <JobListings />
+      <JobListings isHome={true} />
       <ViewAllJobs />
     </>
   );
