@@ -1,21 +1,12 @@
 import React from "react";
-import { Navbar } from "./components/Navbar";
-import { Hero } from "./components/Hero";
-import { Homecards } from "./components/Homecards";
-import { JobListings } from "./components/JobListings";
-import { ViewAllJobs } from "./components/ViewAllJobs";
+import { HomePage } from "./components/pages/HomePage";
+import {Route, createBrowserRouter, createRoutesFromElements, RouterProvider} from 'react-router-dom';
+const router = createBrowserRouter(
+  createRoutesFromElements(<Route index element={<HomePage />}/>)
+);
 
 const App = () => {
-  return (
-    <>
-    <Navbar />
-    <Hero />
-    <Homecards />
-    <JobListings />
-    <ViewAllJobs />
-
-    </>
-  );
+  return  <RouterProvider router={router}/>
 };
 
 export default App;
