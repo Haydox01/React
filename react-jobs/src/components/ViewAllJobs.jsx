@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ViewAllJobs = () => {
+const ViewAllJobs = () => {
   return (
     <section className="m-auto max-w-lg my-10 px-6">
       <a
@@ -12,3 +12,5 @@ export const ViewAllJobs = () => {
     </section>
   );
 }
+
+export default ViewAllJobs;

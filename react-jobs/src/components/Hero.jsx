@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Hero = ({
+ const Hero = ({
   title = " Become a React Dev",
   subtitle = " Find the React job that fits your skills and needs",
 }) => {
@@ -17,3 +17,5 @@ export const Hero = ({
     </section>
   );
 };
+
+export default Hero;

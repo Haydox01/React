@@ -1,7 +1,7 @@
 import React from 'react'
-import { Card } from './Card';
+import Card from './Card'
 
-export const Homecards = () => {
+ const HomeCards = () => {
   return (
     <section className="py-4">
       <div className="container-xl lg:container m-auto">
@@ -34,4 +34,6 @@ export const Homecards = () => {
       </div>
     </section>
   );
-}
+};
+
+export default HomeCards;

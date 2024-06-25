@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaMapMarker} from 'react-icons/fa';
 
-export const JobListing = ({job}) => {
+ const JobListing = ({job}) => {
     const [showFullDescription, setShowFullDescription] = useState (false);
     let description= job.description;
 
@@ -43,3 +43,4 @@ export const JobListing = ({job}) => {
         </div>
       );
 }
+export default JobListing;
